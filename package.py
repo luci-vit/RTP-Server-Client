@@ -3,7 +3,7 @@ import random
 
 class RTPPackage:
     def __init__(self, payload_type=26):
-        # O Packetizer só gerencia o Estado do RTP
+        # O package só gerencia o Estado do RTP
         self.seq_num = random.randint(1, 10000)
         self.timestamp = random.randint(1, 10000)
         self.ssrc = random.randint(100000, 999999)
